@@ -58,7 +58,7 @@ favicon: /img/favicon.png
 
 avatar:
   img: /img/avatar.jpg
-  effect: true
+  effect: false
 
 # Disable all banner images
 disable_top_img: false
@@ -286,7 +286,7 @@ aside:
     category: true
   card_author:
     enable: true
-    description: 计算机大一学生 / 写代码也读鲁迅
+    description: 雄关漫道真如铁，而今迈步从头越。
     button:
       enable: true
       icon: fab fa-github
