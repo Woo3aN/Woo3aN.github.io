@@ -1,303 +1,547 @@
+
+
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
   
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
   
-  <title>Woo3aN&#39;s Blog</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="Woo3aN">
+  <meta name="keywords" content="">
+  
+    <meta property="og:type" content="website">
 <meta property="og:title" content="Woo3aN&#39;s Blog">
 <meta property="og:url" content="https://woo3an.github.io/index.html">
 <meta property="og:site_name" content="Woo3aN&#39;s Blog">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:author" content="Woo3aN">
-<meta name="twitter:card" content="summary">
-  
-    <link rel="alternate" href="/atom.xml" title="Woo3aN's Blog" type="application/atom+xml">
-  
-  
-    <link rel="shortcut icon" href="/favicon.png">
+<meta name="twitter:card" content="summary_large_image">
   
   
   
-<link rel="stylesheet" href="/css/style.css">
+  <title>Woo3aN&#39;s Blog</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1749284_5i9bdhy70f8.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1736178_k526ubmyhba.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"woo3an.github.io","root":"/","version":"1.9.9","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"expand_all":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"openkounter":{"server_url":"https://open-kounter.mintimate.cn","path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
 
   
-    
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
-
-  
-  
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css">
-
 <meta name="generator" content="Hexo 7.3.0"></head>
 
+
 <body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Woo3aN&#39;s Blog</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 100vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Fluid</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content (desktop) -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
         
-          <a class="main-nav-link" href="/">Home</a>
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
         
-          <a class="main-nav-link" href="/archives">Archives</a>
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
         
-      </nav>
-      <nav id="sub-nav">
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
         
         
-          <a class="nav-icon" href="/atom.xml" title="RSS 订阅"><span class="fa fa-rss"></span></a>
-        
-        <a class="nav-icon nav-search-btn" title="搜索"><span class="fa fa-search"></span></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="搜索"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://Woo3aN.github.io"></form>
-      </div>
-    </div>
-  </div>
-</header>
-
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2026/07/15/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2026-07-15T03:58:45.724Z" itemprop="datePublished">2026-07-15</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2026/07/15/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://woo3an.github.io/2026/07/15/hello-world/" data-id="cmrljw3kp0000tq2c9jpdglpg" data-title="Hello World" class="article-share-link"><span class="fa fa-share">分享</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-鲁迅先生的冷与热" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2026/07/15/%E9%B2%81%E8%BF%85%E5%85%88%E7%94%9F%E7%9A%84%E5%86%B7%E4%B8%8E%E7%83%AD/" class="article-date">
-  <time class="dt-published" datetime="2026-07-15T00:00:00.000Z" itemprop="datePublished">2026-07-15</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E6%96%87%E5%AD%A6%E8%AF%84%E8%AE%BA/">文学评论</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2026/07/15/%E9%B2%81%E8%BF%85%E5%85%88%E7%94%9F%E7%9A%84%E5%86%B7%E4%B8%8E%E7%83%AD/">鲁迅先生的冷与热</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <blockquote>
-<p><em>这是笔者高中时的一篇练笔，现在看来观点或许稚嫩，但那份对鲁迅“冷热交织”的着迷，至今未变。重读一遍，依然能感受到当年落笔时的激动。</em></p>
-</blockquote>
-<p>鲁迅先生本人是一个“冷”与“热”的矛盾综合体。下面简单谈谈我的看法。</p>
-<p>首先在文章风格上，鲁迅的文风一定以“冷”为主，但又有“热”的内核。</p>
-<p>在相关研究中，钱理群与张旭东都指出了一点：<strong>杂文最终成为鲁迅最重要的文体</strong>，而他的杂文往往绕不开“冷峻”一词。拿晚年时期的《拿来主义》为例，这篇杂文就深刻分析了如何对待外国文化的问题：</p>
-<blockquote>
-<p>我们要运用脑髓，放出眼光，自己来拿！</p>
-</blockquote>
-<p>该文章与一般的理论文章不同，可以有生动形象的比喻，也有一针见血的批判，还有含蓄却更显讽刺的“曲笔”，这些特点使鲁迅的文章既有“冷酷”，又有“冷静”。事实上，在他其他的文体，如小说、散文中，亦有许多杂文的特点，无论从课文中两篇纪念烈士的回忆性散文，到早期的小说《狂人日记》、《阿Q正传》等，再到《朝花夕拾》中的散文，无不夹杂着鲁迅式的“冷”。张旭东认为，鲁迅所处的时代，中国新文学才刚刚诞生，这一代作家面临着“写什么”和“怎样写”的问题。“写什么”，对于鲁迅来说不难，对那些军阀、“正人君子”之流的批判注定了他文章内容的“冷”。而“怎么写”，对于鲁迅来说，他的文学要在中国文学源流与世界文学参照系中立足，而他最终找到了这种最适合自我与现实的文体——杂文。现实社会决定了他的文章基调是冷的。</p>
-<p>但你也不能说在这其中无“热”的内核。课文里的两篇文章在批判黑暗社会外，饱含了对烈士的深厚情感。《记念刘和珍君》与《为了忘却的记念》中对刘和珍、白莽、柔石等人的回忆饱含温情，更显鲁迅作为革命者的前辈对烈士的关怀与支持。“苟活者在淡红的血色中，会依稀看见微茫的希望；真的猛士，将更奋然而前行。”（《记念刘和珍君》）可见即使面对黑暗现实，鲁迅依然有一颗炽热之心，对革命前途抱有希望。同样在《中国人失掉自信力了吗》里，鲁迅亦表达了“我们有并不失掉自信力的中国人在。”（《中国人失掉自信力了吗》）在这种面对革命的“热”之外，还有一种“热”，或许叫“暖”更合适，以《朝花夕拾》为典型。“阿长” 、“藤野先生”、“寿镜吾”……这些经典的人物形象在鲁迅温暖朴实的散文中形象更加立体。《从百草园到三味书屋》更是塑造了一个“儿童乐园”，足以体现鲁迅对童年生活的怀念。钱理群认为“鲁迅始终有纯真的一面”，从他描写的动物中可以看见，只是这类”热”与“暖”，或许比不过他的时代所更需要的“冷”。</p>
-<p>在思想层面上，我们也能看出鲁迅的“冷”与“热”。相关研究中的两篇文章都提到了一个影响鲁迅早年甚至一生的哲学家——尼采。在“五四”之前，尼采的思想就给了鲁迅这一批作家巨大的震撼。“重估一切价值”的主张在饱受封建礼教“吃人”的旧社会是振聋发聩的。他翻译了尼采的著作《查拉图斯特拉如是说》的序言，并认为尼采是“个人主义之雄杰矣”。鲁迅在1908年的文章《文化偏至论》中写道：</p>
-<blockquote>
-<p>掊物质而张灵明，任个人而排众数。</p>
-</blockquote>
-<p>此时的他反对工业革命以来西方世界对物质、金钱追求的那种庸俗的“唯物主义”，倡导发挥“灵明”，即个人的精神和意志力量。而面对这一时期的民众，他是较为悲观的，认为需要尼采口中的“超人”来改变现实。而他笔下常常出现的“看客”形象或许能够对应尼采笔下的“末人”，即缺乏自主性、麻木不仁的人。于是，对他们冷冷的批判便成了鲁迅的主调。然而尼采这种贵族化的哲学亦使他的主张在纳粹德国被用来美化种族主义，而他引发的中国青年思想浪潮也随着另一位德国思想家——卡尔•马克思的思想传入中国而慢慢结束。</p>
-<p>在鲁迅后期的文章中已不难看出，他的思想已从个人主义向马克思主义转变。毛泽东曾言他是一个“真正的马克思主义者”。他在《拿来主义》中写道：</p>
-<blockquote>
-<p>尼采就自诩过他是太阳，光热无穷…… 然而尼采终究不是太阳，他发了疯。</p>
-</blockquote>
-<p>（《拿来主义》）</p>
-<p>或许这是一种感慨，但也能从中看出一点他思想的转变。鲁迅告别了“超人与末人”，在无数的斗争中意识到“惟新兴的无产者才有将来”。即使在他的文章中很难见到马恩的文章与话语，但他后期对群众的态度以及对革命前途的看法已融合了许多马克思主义的内容。他加入“左联”，并告诫青年：脱离群众的“左翼”是很容易变成“右翼”的。对革命前途，或许在残酷的斗争经历中，他从“天演论”找到“权力意志”“重估价值”，最终又找到这一条红色的道路。好友瞿秋白曾这样评价他：</p>
-<blockquote>
-<p>鲁迅从进化论进到阶级论，从绅士阶级的逆子贰臣进到无产阶级和劳动群众的真正的友人，以至于战士。</p>
-</blockquote>
-<p>他的态度也从迷茫转变为更加积极。即使仍有“庸人”，但“猛士”依然在，他们便是“中国的脊梁”。于是他的文章中仍有对敌人的“冷”，但却有了更多对无产阶级，对革命前途的“热”。</p>
-<p>从他的文风与思想的“冷”与“热”中，我们看到了一个既会“彷徨”，也仍“呐喊”的鲁迅。这种独特的文风和思想或许难以在这片土地上再次出现，但他留下的宝贵遗产仍值得一代又一代人欣赏与解读。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://woo3an.github.io/2026/07/15/%E9%B2%81%E8%BF%85%E5%85%88%E7%94%9F%E7%9A%84%E5%86%B7%E4%B8%8E%E7%83%AD/" data-id="cmrljw3kt0001tq2cexlp3w98" data-title="鲁迅先生的冷与热" class="article-share-link"><span class="fa fa-share">分享</span></a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E4%B8%AD%E5%9B%BD%E7%8E%B0%E4%BB%A3%E6%96%87%E5%AD%A6/" rel="tag">中国现代文学</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%80%9D%E6%83%B3%E5%8F%B2/" rel="tag">思想史</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E9%B2%81%E8%BF%85/" rel="tag">鲁迅</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">分类</h3>
-    <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%96%87%E5%AD%A6%E8%AF%84%E8%AE%BA/">文学评论</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">标签</h3>
-    <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%B8%AD%E5%9B%BD%E7%8E%B0%E4%BB%A3%E6%96%87%E5%AD%A6/" rel="tag">中国现代文学</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%80%9D%E6%83%B3%E5%8F%B2/" rel="tag">思想史</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%B2%81%E8%BF%85/" rel="tag">鲁迅</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">标签云</h3>
-    <div class="widget tagcloud">
-      <a href="/tags/%E4%B8%AD%E5%9B%BD%E7%8E%B0%E4%BB%A3%E6%96%87%E5%AD%A6/" style="font-size: 10px;">中国现代文学</a> <a href="/tags/%E6%80%9D%E6%83%B3%E5%8F%B2/" style="font-size: 10px;">思想史</a> <a href="/tags/%E9%B2%81%E8%BF%85/" style="font-size: 10px;">鲁迅</a>
-    </div>
-  </div>
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">归档</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2026/07/">七月 2026</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">最新文章</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2026/07/15/hello-world/">Hello World</a>
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
           </li>
+          
         
-          <li>
-            <a href="/2026/07/15/%E9%B2%81%E8%BF%85%E5%85%88%E7%94%9F%E7%9A%84%E5%86%B7%E4%B8%8E%E7%83%AD/">鲁迅先生的冷与热</a>
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
           </li>
         
       </ul>
     </div>
   </div>
+</nav>
 
-  
-</aside>
+<!-- Mobile grid menu overlay -->
+<div id="mobile-grid-menu" class="d-lg-none">
+  <div class="mobile-grid-menu-inner">
+    <div class="container">
+      <div class="row">
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-home-fill"></i>
+                  <span>首页</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/archives/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-archive-fill"></i>
+                  <span>归档</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/categories/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-category-fill"></i>
+                  <span>分类</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/tags/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-tags-fill"></i>
+                  <span>标签</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/about/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-user-fill"></i>
+                  <span>关于</span>
+                </div>
+              </a>
+            </div>
+          
+        
+        
+          <div class="col-4 mobile-grid-cell" id="mobile-search-btn">
+            <a href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <div class="mobile-grid-item">
+                <i class="iconfont icon-search"></i>
+                <span>搜索</span>
+              </div>
+            </a>
+          </div>
+        
+        
+          <div class="col-4 mobile-grid-cell" id="mobile-color-toggle-btn"
+               data-label-light="开灯"
+               data-label-dark="关灯">
+            <a href="javascript:;" aria-label="Color Toggle">
+              <div class="mobile-grid-item">
+                <i class="iconfont icon-dark" id="mobile-color-toggle-icon"></i>
+                <span id="mobile-color-toggle-label">关灯</span>
+              </div>
+            </a>
+          </div>
         
       </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      
-      &copy; 2026 Woo3aN<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
-</footer>
+</div>
 
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="An elegant Material-Design theme for Hexo"></span>
+          
+        </div>
+
+        
+      </div>
+
+      
+        <div class="scroll-down-bar">
+          <i class="iconfont icon-arrowdown"></i>
+        </div>
+      
     </div>
-    <nav id="mobile-nav">
+  </div>
+</div>
+
+
+
+</div>
+
+  </header>
+
+  <main>
+    
+      <div class="container nopadding-x-md">
+        <div id="board"
+          style="margin-top: 0">
+          
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-10 m-auto">
+                
+
+<h1 style="display: none">Woo3aN&#39;s Blog</h1>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2026/07/15/hello-world/" target="_self">
+          Hello World
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2026/07/15/hello-world/" target="_self">
+        <div>
+          Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2026-07-15 04:56" pubdate>
+              2026-07-15
+            </time>
+          </div>
+        
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2026/07/15/%E9%B2%81%E8%BF%85%E5%85%88%E7%94%9F%E7%9A%84%E5%86%B7%E4%B8%8E%E7%83%AD/" target="_self">
+          鲁迅先生的冷与热
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2026/07/15/%E9%B2%81%E8%BF%85%E5%85%88%E7%94%9F%E7%9A%84%E5%86%B7%E4%B8%8E%E7%83%AD/" target="_self">
+        <div>
+          这是笔者高中时的一篇练笔，现在看来观点或许稚嫩，但那份对鲁迅“冷热交织”的着迷，至今未变。重读一遍，依然能感受到当年落笔时的激动。  鲁迅先生本人是一个“冷”与“热”的矛盾综合体。下面简单谈谈我的看法。 首先在文章风格上，鲁迅的文风一定以“冷”为主，但又有“热”的内核。 在相关研究中，钱理群与张旭东都指出了一点：杂文最终成为鲁迅最重要的文体，而他的杂文往往绕不开“冷峻”一词。拿晚年时期的《拿来主
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2026-07-15 00:00" pubdate>
+              2026-07-15
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
   
-    <a href="/" class="mobile-nav-link">Home</a>
   
-    <a href="/archives" class="mobile-nav-link">Archives</a>
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E6%96%87%E5%AD%A6%E8%AF%84%E8%AE%BA/" class="category-chain-item">文学评论</a>
   
-</nav>
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E9%B2%81%E8%BF%85/">#鲁迅</a>
+            
+              <a href="/tags/%E4%B8%AD%E5%9B%BD%E7%8E%B0%E4%BB%A3%E6%96%87%E5%AD%A6/">#中国现代文学</a>
+            
+              <a href="/tags/%E6%80%9D%E6%83%B3%E5%8F%B2/">#思想史</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     
 
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
 
-<script src="/js/jquery-3.6.4.min.js"></script>
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
 
 
 
   
-<script src="/fancybox/jquery.fancybox.min.js"></script>
+    <script  src="/js/img-lazyload.js" ></script>
+  
 
 
 
 
-<script src="/js/script.js"></script>
+  <script  src="/js/local-search.js" ></script>
 
 
 
 
 
-  </div>
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
 </body>
 </html>
