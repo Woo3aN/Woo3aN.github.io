@@ -294,7 +294,7 @@ aside:
       link: https://github.com/Woo3aN
   card_announcement:
     enable: true
-    content: 代码解决做什么，哲学回答为什么。
+    content: 🌟 <a href="/2026/07/15/关于/">关于本站和它的主人</a>
   card_recent_post:
     enable: true
     # If set 0 will show all
