@@ -294,7 +294,7 @@ aside:
       link: https://github.com/Woo3aN
   card_announcement:
     enable: true
-    content: 🌟 <a href="/2026/07/15/关于/">关于本站和它的主人</a>
+    content: 🌟 <a href="/about/">关于</a>
   card_recent_post:
     enable: true
     # If set 0 will show all
