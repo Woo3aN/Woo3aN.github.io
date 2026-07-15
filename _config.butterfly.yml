@@ -57,14 +57,14 @@ social:
 favicon: /img/favicon.png
 
 avatar:
-  img: /img/butterfly-icon.png
-  effect: false
+  img: /img/avatar.jpg
+  effect: true
 
 # Disable all banner images
 disable_top_img: false
 
 # If the banner of page not setting, it will show the default_top_img
-default_top_img:
+default_top_img: /img/banner.jpg
 
 # The banner image of index page
 index_img: /img/cover.jpg
@@ -286,15 +286,15 @@ aside:
     category: true
   card_author:
     enable: true
-    description:
+    description: 计算机大一学生 / 写代码也读鲁迅
     button:
       enable: true
       icon: fab fa-github
       text: Follow Me
-      link: https://github.com/xxxxxx
+      link: https://github.com/Woo3aN
   card_announcement:
     enable: true
-    content: This is my Blog
+    content: 代码解决做什么，哲学回答为什么。
   card_recent_post:
     enable: true
     # If set 0 will show all
