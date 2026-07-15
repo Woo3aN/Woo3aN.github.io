@@ -22,7 +22,9 @@ jobs:
         run: npm ci
 
       - name: Generate static files
-        run: npx hexo generate
+        run: |
+          rm -f node_modules/hexo-theme-butterfly/source/img/favicon.ico
+          npx hexo generate
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
