@@ -67,7 +67,7 @@ disable_top_img: false
 default_top_img:
 
 # The banner image of index page
-index_img:
+index_img: /img/cover.jpg
 
 # The banner image of archive page
 archive_img:
@@ -165,8 +165,8 @@ subtitle:
   # 3 - jinrishici.com
   source: false
   sub:
-    - 代码解决怎么做，哲学回答为什么。
-    - 一个计算机学生的人文角落。
+    - Per Aspera ad Astra
+    - 循此苦旅，直抵群星。
 
 # Article layout on the homepage
 # 1: Cover on the left, info on the right
