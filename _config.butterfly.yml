@@ -18,10 +18,11 @@ nav:
   fixed: false
 
 menu:
-  # Home: / || fas fa-home
-  # List||fas fa-list:
-  #   Music: /music/ || fas fa-music
-  #   Movie: /movies/ || fas fa-video
+  Home: / || fas fa-home
+  Archives: /archives/ || fas fa-archive
+  Categories: /categories/ || fas fa-folder
+  Tags: /tags/ || fas fa-tags
+  关于: /2026/07/15/关于/ || fas fa-user
 
 # --------------------------------------
 # Code Blocks Settings
@@ -46,8 +47,8 @@ code_blocks:
 # Formal:
 #   icon: link || the description || color
 social:
-  # fab fa-github: https://github.com/xxxxx || Github || '#24292e'
-  # fas fa-envelope: mailto:xxxxxx@gmail.com || Email || '#4a7dbe'
+  fab fa-github: https://github.com/Woo3aN || GitHub || '#24292e'
+  fas fa-envelope: mailto:244311088@qq.com || Email || '#4a7dbe'
 
 # --------------------------------------
 # Image Settings
@@ -149,7 +150,7 @@ index_top_img_height:
 
 # The subtitle on homepage
 subtitle:
-  enable: false
+  enable: true
   # Typewriter Effect
   effect: true
   # Customize typed.js
@@ -162,6 +163,10 @@ subtitle:
   # 1 - hitokoto.cn
   # 2 - https://api.aa1.cn/doc/yiyan.html
   # 3 - jinrishici.com
+  source: false
+  sub:
+    - 代码解决怎么做，哲学回答为什么。
+    - 一个计算机学生的人文角落。
   source: false
   # If you close the typewriter effect, the subtitle will only show the first line of sub
   sub:
@@ -533,7 +538,7 @@ comments:
   # Leave it empty if you don't need comments
   # Choose: Disqus/Disqusjs/Livere/Gitalk/Valine/Waline/Utterances/Facebook Comments/Twikoo/Giscus/Remark42/Artalk
   # Format of two comments system : Disqus,Waline
-  use:
+  use: Giscus
   # Display the comment name next to the button
   text: true
   # Lazyload: The comment system will be load when comment element enters the browser's viewport.
@@ -630,9 +635,9 @@ twikoo:
 # Giscus
 # https://giscus.app/
 giscus:
-  repo:
-  repo_id:
-  category_id:
+  repo: Woo3aN/Woo3aN.github.io
+  repo_id: R_kgDOTY2kTw
+  category_id: DIC_kwDOTY2kT84DBOm9
   light_theme: light
   dark_theme: dark
   js:
