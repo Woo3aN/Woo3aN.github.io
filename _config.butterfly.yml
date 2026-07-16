@@ -1063,7 +1063,7 @@ inject:
     # - <link rel="stylesheet" href="/xxx.css">
   bottom:
     - <script>
-      (function(){var a=[],b=0;for(var i=0;i<8;i++){var d=document.createElement("div");d.className="cursor-trail";d.style.cssText="position:fixed;width:10px;height:10px;border-radius:50%;pointer-events:none;z-index:9999;background:rgb(91,79,207);opacity:.4;transition:width .3s,height .3s,opacity .3s;";document.body.appendChild(d);a.push({el:d,x:0,y:0})}document.addEventListener("mousemove",function(e){a[0].x=e.clientX;a[0].y=e.clientY});function animate(){for(var i=a.length-1;i>0;i--){a[i].x+=(a[i-1].x-a[i].x)*.5;a[i].y+=(a[i-1].y-a[i].y)*.5;a[i].el.style.left=(a[i].x-5)+"px";a[i].el.style.top=(a[i].y-5)+"px"}var t=a[0].el;t.style.left=(a[0].x-6)+"px";t.style.top=(a[0].y-6)+"px";t.style.width="12px";t.style.height="12px";t.style.opacity=".7";requestAnimationFrame(animate)}animate()})();
+      (function(){var c=["#fff","#f0e6ff","#d4c5f0","#e8ddff"],t=0;document.addEventListener("mousemove",function(e){t++;if(t%2)return;var s=document.createElement("div"),x=e.clientX,y=e.clientY,dx=(Math.random()-.5)*40,dy=(Math.random()-.5)*40,o=1,r=4+Math.random()*3;var color=c[~~(Math.random()*c.length)];s.style.cssText="position:fixed;left:"+x+"px;top:"+y+"px;width:"+r+"px;height:"+r+"px;background:"+color+";border-radius:50%;pointer-events:none;z-index:9999;box-shadow:0 0 "+(3+Math.random()*5)+"px "+color+";";document.body.appendChild(s);(function anim(el,ox,oy,a,s){a-=.02;s-=.03;if(a<=0){el.remove();return}el.style.opacity=a;el.style.left=ox+dx*(1-a)+"px";el.style.top=oy+dy*(1-a)-a*15+"px";el.style.transform="scale("+(1-a*.5)+")";requestAnimationFrame(function(){anim(el,ox,oy,a,s)})})(s,x,y,1,r);})})();
       </script>
 
 # CDN Settings
