@@ -1,5 +1,5 @@
 https://woo3an.github.io/tags/index.html
-https://woo3an.github.io/2026/07/15/hello-world/
+https://woo3an.github.io/2026/07/16/hello-world/
 https://woo3an.github.io/about/
 https://woo3an.github.io/2026/07/15/%E9%B2%81%E8%BF%85%E5%85%88%E7%94%9F%E7%9A%84%E5%86%B7%E4%B8%8E%E7%83%AD/
 https://woo3an.github.io/categories/index.html
@@ -9,4 +9,6 @@ https://woo3an.github.io/tags/%E5%8D%9A%E5%AE%A2-%E5%85%B3%E4%BA%8E/
 https://woo3an.github.io/tags/%E9%B2%81%E8%BF%85/
 https://woo3an.github.io/tags/%E4%B8%AD%E5%9B%BD%E7%8E%B0%E4%BB%A3%E6%96%87%E5%AD%A6/
 https://woo3an.github.io/tags/%E6%80%9D%E6%83%B3%E5%8F%B2/
+https://woo3an.github.io/tags/%E6%96%87%E5%AD%A6/
 https://woo3an.github.io/categories/%E9%9A%8F%E7%AC%94/
+https://woo3an.github.io/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/
