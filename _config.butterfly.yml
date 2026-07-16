@@ -1062,7 +1062,20 @@ inject:
   head:
     # - <link rel="stylesheet" href="/xxx.css">
   bottom:
-    # - <script src="xxxx"></script>
+    - <script>
+      // 鼠标拖尾特效
+      (function(){
+        var dots=[],max=12,colors=['rgba(91,79,207,.8)','rgba(107,95,223,.5)','rgba(45,27,105,.3)'];
+        window.addEventListener('mousemove',function(e){
+          var dot=document.createElement('div');
+          dot.className='cursor-trail';
+          dot.style.cssText='position:fixed;width:6px;height:6px;border-radius:50%;pointer-events:none;z-index:9999;left:'+(e.clientX-3)+'px;top:'+(e.clientY-3)+'px;background:'+colors[~~(Math.random()*3)]+';transition:all .8s ease-out;';
+          document.body.appendChild(dot);
+          dots.push(dot);
+          if(dots.length>max){var r=dots.shift();r.style.opacity='0';r.style.transform='scale(0)';setTimeout(function(){r.remove()},800);}
+        });
+      })();
+      </script>
 
 # CDN Settings
 # Don't modify the following settings unless you know how they work
