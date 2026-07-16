@@ -870,7 +870,7 @@ canvas_fluttering_ribbon:
 # canvas_nest
 # https://github.com/hustcc/canvas-nest.js
 canvas_nest:
-  enable: true
+  enable: false
   # Color of lines, default: '0,0,0'; RGB values: (R,G,B).(note: use ',' to separate.)
   color: '91,79,207'
   # The opacity of line (0~1)
@@ -1062,9 +1062,7 @@ inject:
   head:
     # - <link rel="stylesheet" href="/xxx.css">
   bottom:
-    - <script>
-      (function(){var c=document.createElement("canvas"),w=c.width=window.innerWidth,h=c.height=window.innerHeight,x=w/2,y=h/2,p=[],l=15;c.style.cssText="position:fixed;top:0;left:0;pointer-events:none;z-index:9999;";document.body.appendChild(c);var ctx=c.getContext("2d");document.addEventListener("mousemove",function(e){x=e.clientX;y=e.clientY});function draw(){ctx.clearRect(0,0,w,h);p.push({x:x,y:y});if(p.length>l)p.shift();ctx.strokeStyle="rgba(180,160,220,.8)";ctx.lineWidth=2;ctx.lineCap="round";for(var i=1;i<p.length;i++){ctx.beginPath();ctx.moveTo(p[i-1].x,p[i-1].y);ctx.lineTo(p[i].x,p[i].y);ctx.strokeStyle="rgba(180,160,220,"+(i/p.length*.8)+")";ctx.lineWidth=i/p.length*2.5;ctx.stroke()}ctx.strokeStyle="rgba(220,210,255,.9)";ctx.lineWidth=1.5;ctx.beginPath();ctx.moveTo(p[p.length-2]?.x||x,p[p.length-2]?.y||y);ctx.lineTo(x,y);ctx.stroke();requestAnimationFrame(draw)}window.addEventListener("resize",function(){w=c.width=window.innerWidth;h=c.height=window.innerHeight});draw()})();
-      </script>
+    # - <script src="xxxx"></script>
 
 # CDN Settings
 # Don't modify the following settings unless you know how they work
