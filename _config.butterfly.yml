@@ -750,6 +750,8 @@ site_verification:
   #   content: xxxxxx
   # - name: baidu-site-verification
   #   content: xxxxxxx
+  - name: msvalidate.01
+    content: 1335DD198CFC3AA131AB80D99F0AEB88
 
 # --------------------------------------
 # Beautify / Effect

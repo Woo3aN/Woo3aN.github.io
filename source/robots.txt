@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://Woo3aN.github.io/sitemap.xml
+Sitemap: https://Woo3aN.github.io/baidusitemap.xml
