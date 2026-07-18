@@ -17,13 +17,14 @@ jobs:
       - name: Restore file modification times
         run: |
           git ls-files | while read file; do
-            touch -d "$(git log -1 --format='%aI' -- "$file")" "$file"
+            ts=$(git log -1 --format='%aI' -- "$file" 2>/dev/null || true)
+            [ -n "$ts" ] && touch -d "$ts" "$file" || true
           done
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: "22"
 
       - name: Install dependencies
         run: npm ci
