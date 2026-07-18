@@ -12,6 +12,13 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: source
+          fetch-depth: 0
+
+      - name: Restore file modification times
+        run: |
+          git ls-files | while read file; do
+            touch -d "$(git log -1 --format='%aI' -- "$file")" "$file"
+          done
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
