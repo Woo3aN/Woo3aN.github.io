@@ -9,7 +9,7 @@ description: ''
 keywords:
 author: Woo3aN
 language: zh-CN
-timezone: Asia/Shanghai
+# timezone: Asia/Shanghai  # 注释掉，让系统时区决定（Actions 已设 TZ=Asia/Shanghai）
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
