@@ -7,6 +7,8 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    env:
+      TZ: Asia/Shanghai
     steps:
       - name: Checkout source
         uses: actions/checkout@v4
@@ -32,6 +34,7 @@ jobs:
       - name: Generate static files
         run: |
           rm -f node_modules/hexo-theme-butterfly/source/img/favicon.ico
+          npx hexo clean
           npx hexo generate
 
       - name: Deploy to GitHub Pages
