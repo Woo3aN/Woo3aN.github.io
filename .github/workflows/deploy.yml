@@ -43,7 +43,6 @@ jobs:
       - name: Generate static files
         run: |
           rm -f node_modules/hexo-theme-butterfly/source/img/favicon.ico
-          npx hexo clean
           npx hexo generate
 
       - name: Deploy to GitHub Pages
