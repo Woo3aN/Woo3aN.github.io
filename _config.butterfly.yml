@@ -1063,7 +1063,7 @@ css_prefix: true
 inject:
   head:
     # - <link rel="stylesheet" href="/xxx.css">
-    - <style>.article-sort-item.month{font-size:1.1rem;font-weight:700;color:#fff;margin:16px 0 8px 0;padding-left:8px;border-left:3px solid var(--accent)}</style>
+    - <style>.article-sort-item.month{font-size:1.15rem;margin-bottom:10px}.article-sort-item.month:before{border-color:var(--accent)!important}</style>
   bottom:
     # - <script src="xxxx"></script>
     - <script>document.addEventListener('DOMContentLoaded',function(){var d=document.querySelector('.search-dialog-title');if(d)d.textContent='搜索'})</script>
