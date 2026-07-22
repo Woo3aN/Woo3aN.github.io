@@ -10,6 +10,7 @@ if "_p('page.archives')" not in c:
     errors.append('FATAL: page.archives pattern not found in page.js')
 else:
     c = c.replace("this._p('page.archives')", "'归档'")
+c = c.replace('return loop(menu) || defaultTitle', 'return defaultTitle || loop(menu)')
     with open(f1, 'w') as f: f.write(c)
     print('OK: Archives -> nav.archives')
 
