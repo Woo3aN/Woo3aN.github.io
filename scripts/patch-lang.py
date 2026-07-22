@@ -39,7 +39,7 @@ new3 = "    - let year\n    - let month\n    - posts.forEach(article => {\n     
 if old3 in c:
     c = c.replace(old3, new3)
     old4 = "      if tempYear !== year\n        - year = tempYear\n        .article-sort-item.year= year"
-    new4 = "      if tempYear !== year\n        - year = tempYear\n        - month = tempMonth\n        .article-sort-item.year= year\n      else if tempMonth !== month\n        - month = tempMonth\n        .article-sort-item.month= tempMonth"
+    new4 = "      if tempYear !== year\n        - year = tempYear\n        - month = tempMonth\n        .article-sort-item.year= year\n        .article-sort-item.month= tempMonth\n      else if tempMonth !== month\n        - month = tempMonth\n        .article-sort-item.month= tempMonth"
     c = c.replace(old4, new4)
     with open(f3, 'w') as f:
         f.write(c)
