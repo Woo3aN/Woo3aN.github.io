@@ -32,15 +32,20 @@ else:
 f3 = 'node_modules/hexo-theme-butterfly/layout/includes/mixins/article-sort.pug'
 with open(f3, 'r') as f:
     c = f.read()
+# Normalize line endings to LF
+c = c.replace('\r\n', '\n')
 old3 = "    - let year\n    - posts.forEach(article => {\n      - const tempYear = date(article.date, 'YYYY')"
 new3 = "    - let year\n    - let month\n    - posts.forEach(article => {\n      - const tempYear = date(article.date, 'YYYY')\n      - const tempMonth = date(article.date, 'YYYY年MM月')"
-c = c.replace(old3, new3)
-old4 = "      if tempYear !== year\n        - year = tempYear\n        .article-sort-item.year= year"
-new4 = "      if tempYear !== year\n        - year = tempYear\n        - month = tempMonth\n        .article-sort-item.year= year\n      else if tempMonth !== month\n        - month = tempMonth\n        .article-sort-item.month= tempMonth"
-c = c.replace(old4, new4)
-with open(f3, 'w') as f:
-    f.write(c)
-print('OK: Archive now groups by month')
+if old3 in c:
+    c = c.replace(old3, new3)
+    old4 = "      if tempYear !== year\n        - year = tempYear\n        .article-sort-item.year= year"
+    new4 = "      if tempYear !== year\n        - year = tempYear\n        - month = tempMonth\n        .article-sort-item.year= year\n      else if tempMonth !== month\n        - month = tempMonth\n        .article-sort-item.month= tempMonth"
+    c = c.replace(old4, new4)
+    with open(f3, 'w') as f:
+        f.write(c)
+    print('OK: Archive now groups by month')
+else:
+    errors.append('FATAL: article-sort.pug pattern not found')
 
 if errors:
     for e in errors:
