@@ -44,13 +44,10 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Patch translations then generate
+      - name: Generate static files
         run: |
           rm -f node_modules/hexo-theme-butterfly/source/img/favicon.ico
-          # 1. Add page.archives right after page.articles in zh-CN.yml
-          sed -i '/^  articles: 全部文章$/a\  archives: 归档' node_modules/hexo-theme-butterfly/languages/zh-CN.yml
-          # 2. Change search button text
-          sed -i 's/^  title: 搜索$/  title: Search/' node_modules/hexo-theme-butterfly/languages/zh-CN.yml
+          python3 scripts/patch-lang.py
           npx hexo generate
 
       - name: Deploy to GitHub Pages
