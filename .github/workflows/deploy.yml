@@ -20,12 +20,16 @@ jobs:
         run: |
           git ls-files | while read file; do
             if echo "$file" | grep -q '^source/_posts/.*\.md$'; then
-              # Article files: only use HEAD date if content actually changed
-              if git diff --ignore-space-at-eol HEAD~1 HEAD -- "$file" 2>/dev/null | grep -q '^[-+]'; then
-                ts=$(git log -1 --format='%aI' -- "$file")
-              else
-                ts=$(git log --skip=1 -1 --format='%aI' -- "$file" 2>/dev/null || true)
-              fi
+              # For article files: find the last commit that actually changed content
+              ts=""
+              for commit in $(git log --format='%H' -20 -- "$file"); do
+                parent=$(git rev-parse "$commit~1" 2>/dev/null) || continue
+                if git diff --ignore-space-at-eol "$parent" "$commit" -- "$file" 2>/dev/null | grep -q '^[-+]'; then
+                  ts=$(git log -1 --format='%aI' "$commit")
+                  break
+                fi
+              done
+              [ -z "$ts" ] && ts=$(git log -1 --format='%aI' -- "$file" 2>/dev/null || true)
             else
               ts=$(git log -1 --format='%aI' -- "$file" 2>/dev/null || true)
             fi
