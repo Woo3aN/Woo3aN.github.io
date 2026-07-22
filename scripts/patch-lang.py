@@ -9,7 +9,7 @@ with open(f1, 'r') as f: c = f.read()
 if "_p('page.archives')" not in c:
     errors.append('FATAL: page.archives pattern not found in page.js')
 else:
-    c = c.replace("_p('page.archives')", "_p('nav.archives')")
+    c = c.replace("this._p('page.archives')", "'归档'")
     with open(f1, 'w') as f: f.write(c)
     print('OK: Archives -> nav.archives')
 
