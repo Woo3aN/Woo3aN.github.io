@@ -18,6 +18,7 @@ nav:
   fixed: false
 
 menu:
+  Search: javascript:document.getElementById('search-button').click() || fas fa-search
   Home: / || fas fa-home
   Archives: /archives/ || fas fa-archive
   Categories: /categories/ || fas fa-folder
