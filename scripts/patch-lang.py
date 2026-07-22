@@ -3,25 +3,29 @@ import sys
 
 errors = []
 
-# Fix 1: Archives uses _p('page.archives') -> _p('nav.archives')
+# Fix 1: Archives hero title
 f1 = 'node_modules/hexo-theme-butterfly/scripts/helpers/page.js'
-with open(f1, 'r') as f: c = f.read()
-if "_p('page.archives')" not in c:
+with open(f1, 'r') as f:
+    c = f.read()
+if "this._p('page.archives')" not in c:
     errors.append('FATAL: page.archives pattern not found in page.js')
 else:
     c = c.replace("this._p('page.archives')", "'归档'")
-c = c.replace('return loop(menu) || defaultTitle', 'return defaultTitle || loop(menu)')
-    with open(f1, 'w') as f: f.write(c)
-    print('OK: Archives -> nav.archives')
+    c = c.replace('return loop(menu) || defaultTitle', 'return defaultTitle || loop(menu)')
+    with open(f1, 'w') as f:
+        f.write(c)
+    print('OK: Archives -> hardcoded 归档 + defaultTitle first')
 
-# Fix 2: Search button hardcode 'Search'
+# Fix 2: Search button text
 f2 = 'node_modules/hexo-theme-butterfly/layout/includes/header/nav.pug'
-with open(f2, 'r') as f: c = f.read()
+with open(f2, 'r') as f:
+    c = f.read()
 if "_p('search.title')" not in c:
     errors.append('FATAL: search.title pattern not found in nav.pug')
 else:
     c = c.replace("_p('search.title')", "'Search'")
-    with open(f2, 'w') as f: f.write(c)
+    with open(f2, 'w') as f:
+        f.write(c)
     print('OK: Search button -> Search')
 
 if errors:
