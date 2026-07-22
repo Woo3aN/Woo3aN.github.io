@@ -1065,7 +1065,6 @@ inject:
     # - <link rel="stylesheet" href="/xxx.css">
   bottom:
     # - <script src="xxxx"></script>
-    - <script>document.addEventListener('pjax:complete',function(){fetch('https://events.vercount.one/api/v2/log',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({url:window.location.href,isNewUv:false})}).then(function(r){return r.json()}).then(function(d){if(d.status==='success'){['site_pv','site_uv','page_pv'].forEach(function(k){var el=document.getElementById('busuanzi_value_'+k);if(el)el.textContent=d.data[k]})}})});</script>
 
 # CDN Settings
 # Don't modify the following settings unless you know how they work
