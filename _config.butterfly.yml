@@ -18,7 +18,6 @@ nav:
   fixed: false
 
 menu:
-  Search: javascript:document.getElementById('search-button').click() || fas fa-search
   Home: / || fas fa-home
   Archives: /archives/ || fas fa-archive
   Categories: /categories/ || fas fa-folder
@@ -1066,6 +1065,7 @@ inject:
     # - <link rel="stylesheet" href="/xxx.css">
   bottom:
     # - <script src="xxxx"></script>
+    - <script>document.addEventListener('DOMContentLoaded',function(){var d=document.querySelector('.search-dialog-title');if(d)d.textContent='搜索'})</script>
 
 # CDN Settings
 # Don't modify the following settings unless you know how they work
