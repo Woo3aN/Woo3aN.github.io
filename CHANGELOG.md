@@ -2,56 +2,96 @@
 
 ## 2026-07-22
 
-### Vercount 统计
-- 切换到 Vercount 替代不蒜子（`busuanzi` CDN → `events.vercount.one/js`）
-- 发现 Vercount `site_pv` 每天重置（后端 bug，非配置问题）
-- GitHub Actions 移除 `hexo clean`，减少触发数据重置的可能
+### 界面调整
+- 菜单「关于」→「About」
+- 搜索按钮「搜索」→「Search」；弹窗标题 + 输入框保留中文
+- Archives 大标题「Archives」→「归档」，与 Tags「标签」/ Categories「分类」统一
+- 归档页按月分组（2026 → 2026年07月）
+- 归档月标题时间线与年份对齐
+
+### 统计
+- Vercount `site_pv` 每天重置：确认是 Vercount 后端 bug
+- GitHub Actions 移除 `hexo clean`，减少触发数据重置
+
+### 搜索
+- 配置 Bing Webmaster Tools 并验证成功
+- 百度站长平台：github.io 域名名额已满，需自定义域名
 
 ### SEO
-- 添加 `robots.txt`，声明 Google 和 Baidu sitemap
+- `robots.txt` 声明 Google + Baidu sitemap
 - `_config.yml` 补充 `description` 和 `keywords`
-- Bing Webmaster Tools 验证成功，提交 sitemap
-- 百度站长平台无法添加（github.io 域名名额已满）
 
-### 界面
-- 菜单「关于」→「About」
-- 搜索按钮文字「搜索」→「Search」
-- Archives 页面大标题「Archives」→「归档」（与 Tags「标签」、Categories「分类」统一）
-- 归档页按月分组（2026 → 2026年07月）
-- 搜索弹窗标题保留中文「搜索」，输入框保留中文
-
-### 日期修复
-- 文章日期统一加 `12:00` 时间戳，避免 UTC 时区导致日期回退一天
-- GitHub Actions 智能日期：文章内容未变则沿用旧日期，改配置不刷文章日期
-- `_config.yml` 时区注释掉，Actions 设 `TZ: Asia/Shanghai`
+### 日期
+- 文章 frontmatter 日期统一加时间戳，避免跨时区偏移
+- Actions 智能 mtime：文章内容未变不刷新更新日期
 
 ### PJAX
-- 关闭 PJAX（与 Vercount 冲突待修复）
-
-### 部署
-- Node.js 22，GitHub Actions 自动部署
-- `fetch-depth: 0` + git 历史恢复文件修改时间
+- 关闭 PJAX（与 Vercount 有兼容问题，待修复）
 
 ---
 
-## 2026-07-15 ~ 2026-07-21
+## 2026-07-21
+
+### Vercount 迁移
+- 不蒜子 → Vercount（`events.vercount.one/js`）
+- `site_pv` 每天重置，调试多日确认是 Vercount 后端问题
+
+### 部署优化
+- Node.js 20 → 22
+- `fetch-depth: 0`，git 历史恢复文件 mtime
+- `hexo clean` 还原为仅 `generate`
+- 文章内容 diff 检测，避免改配置刷新日期
+
+---
+
+## 2026-07-20
+
+### SEO & 验证
+- 添加 `robots.txt`
+- Bing 站长平台 HTML Meta Tag 验证
+
+---
+
+## 2026-07-19
+
+### 发布文章
+- 【补完计划】俗女养成记
+- 我看娜拉出走
+
+---
+
+## 2026-07-16
+
+### 文章
+- 发布【补完计划】《鼠疫》与《局外人》
+- 加缪文章添加图片
+
+---
+
+## 2026-07-15
 
 ### 博客搭建
-- Hexo 7.3.0 + Butterfly 5.5.5
-- GitHub Pages 部署（source 分支 → main 分支）
-- 坚果云同步文章（Junction 链接 `source/_posts` → 坚果云 `Blog/_posts`）
+- Hexo 7.3.0 + Butterfly 5.5.5 主题
+- GitHub Pages（source 分支 → main 分支部署）
+- 坚果云同步文章（Junction: `source/_posts` → `D:\我的坚果云\Blog\_posts`）
 - GitHub Actions 自动部署
 
 ### 文章
 - 鲁迅先生的冷与热
-- 关于
-- 【补完计划】《鼠疫》与《局外人》
-- 我看娜拉出走
-- 【补完计划】俗女养成记
+- 关于（About 页面）
 
-### 功能
-- 本地搜索（local_search）
-- 不蒜子 → Vercount 统计
-- PJAX 无刷新切换
-- 鼠标拖尾特效（Canvas）
-- Bing 站长验证
+---
+
+## 2026-07-14 及之前
+
+### 主题切换与配置
+- Fluid 主题 → Butterfly 主题
+- 配置：自动暗色模式、本地搜索、封面图、头像、favicon
+- Blue-Purple 蓝紫配色方案
+- Giscus 评论系统（Fluid 时期）
+- 不蒜子统计（后来换 Vercount）
+- 粒子网络背景 + 鼠标拖尾特效（后来关闭）
+- PJAX 无刷新切换（后来关闭）
+- 分类和标签页面配置
+- 时区修复（Asia/Shanghai）
+- Sticky 置顶排序
