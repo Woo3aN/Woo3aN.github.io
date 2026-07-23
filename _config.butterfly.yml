@@ -441,9 +441,9 @@ wordcount:
 
 # Busuanzi count for PV / UV in site
 busuanzi:
-  site_uv: true
-  site_pv: true
-  page_pv: true
+  site_uv: false
+  site_pv: false
+  page_pv: false
 
 # --------------------------------------
 # Math
@@ -687,7 +687,7 @@ crisp:
 # --------------------------------------
 
 # https://tongji.baidu.com/web/welcome/login
-baidu_analytics:
+baidu_analytics: 0be8e3d4e66ea183985c971602684577
 
 # https://analytics.google.com/analytics/web/
 google_analytics:
