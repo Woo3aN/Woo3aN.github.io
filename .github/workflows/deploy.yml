@@ -18,23 +18,23 @@ jobs:
 
       - name: Restore file modification times
         run: |
-          git ls-files | while read file; do
-            if echo "$file" | grep -q '^source/_posts/.*\.md$'; then
-              # For article files: find the last commit that actually changed content
-              ts=""
-              for commit in $(git log --format='%H' -20 -- "$file"); do
-                parent=$(git rev-parse "$commit~1" 2>/dev/null) || continue
-                if git diff --ignore-space-at-eol "$parent" "$commit" -- "$file" 2>/dev/null | grep -q '^[-+]'; then
-                  ts=$(git log -1 --format='%aI' "$commit")
-                  break
-                fi
-              done
-              [ -z "$ts" ] && ts=$(git log -1 --format='%aI' -- "$file" 2>/dev/null || true)
-            else
-              ts=$(git log -1 --format='%aI' -- "$file" 2>/dev/null || true)
-            fi
-            [ -n "$ts" ] && touch -d "$ts" "$file" || true
+          # Hexo 的 updated_option 是 mtime，而 checkout 会把所有文件的修改时间
+          # 设成同一时刻 —— 于是每篇文章的「更新于」都变成构建时间。
+          # 这里按每个文件最后一次提交的时间把它还原回去。
+          #
+          # ⚠️ 必须用 `-z` + `read -d ''` 读路径：非 ASCII 文件名在 git 的默认输出里
+          # 会被转义成 "\343\200\220..." 并加上引号，直接当路径用会找不到文件。
+          # 上一版就是这么空转的 —— 判断 `^source/_posts/` 永远不匹配，touch 全部跳过。
+          git ls-files -z | while IFS= read -r -d '' file; do
+            case "$file" in
+              source/_posts/*.md)
+                ts=$(git log -1 --format='%aI' -- "$file" 2>/dev/null || true)
+                if [ -n "$ts" ]; then touch -d "$ts" "$file"; fi
+                ;;
+            esac
           done
+          echo "还原后的修改时间（应与各文最后一次提交一致）："
+          ls -l --time-style=long-iso source/_posts/*.md
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
