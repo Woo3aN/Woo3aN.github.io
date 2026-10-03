@@ -1,6 +1,6 @@
 ---
 title: 赛博博饼：一个 Vibe Coding 出来的中秋小游戏
-date: 2026-10-03 12:00
+date: 2026-10-03 10:00
 tags:
   - Vibe Coding
   - Cloudflare
